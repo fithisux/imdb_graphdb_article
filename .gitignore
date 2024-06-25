@@ -1,3 +1,5 @@
-.ipynb_checkpoints/**
-kuzudb_elt/**
+**/.ipynb_checkpoints/**
+kuzudb_version/export_elt/**
+neo4j_version/export_elt/**
+kuzudb_version/kuzudb_elt/**
 export_elt/**

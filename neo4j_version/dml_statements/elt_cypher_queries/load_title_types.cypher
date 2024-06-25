@@ -1,0 +1,1 @@
+LOAD CSV WITH HEADERS FROM 'file:///seeds/title_types.csv' AS line CREATE (n:TITLE_TYPE {title_type:line.title_type});

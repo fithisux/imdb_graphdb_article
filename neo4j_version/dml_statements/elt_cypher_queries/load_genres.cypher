@@ -1,0 +1,1 @@
+LOAD CSV WITH HEADERS FROM 'file:///seeds/genres.csv' AS line CREATE (n:GENRE {gnere:line.genre});
