@@ -3,7 +3,7 @@
 ## Prelude
 (Upcoming article) Article on Graph Modeling of the IMDB dataset.
 
-Checkout this repo in the same folder with this one.
+Checkout this repo in the same folder with this one [IMDB DATASET ARTICLE CODE](https://github.com/fithisux/imdb_dataset_article).
  
 
 ## Kuzudb version

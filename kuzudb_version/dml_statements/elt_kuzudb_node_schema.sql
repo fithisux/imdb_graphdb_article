@@ -12,4 +12,4 @@ CREATE NODE TABLE TITLE_AKAS(ID STRING, ordering INT32, title STRING, isOriginal
 CREATE NODE TABLE TITLE_BASICS(tconst STRING, primaryTitle STRING, originalTitle STRING, isAdult boolean, startYear INT32, endYear INT32 ,runtimeMinutes INT32, PRIMARY KEY (tconst));
 CREATE NODE TABLE TITLE_EPISODE(epitconst STRING, seasonNumber INT32, episodeNumber INT32, PRIMARY KEY (epitconst));
 CREATE NODE TABLE TITLE_PRINCIPALS(ID STRING, ordering INT32, job STRING, PRIMARY KEY (ID));
-CREATE NODE TABLE TITLE_RATINGS(tconst STRING, averageRating DOUBLE, numVotes INT32, PRIMARY KEY (tconst));
+CREATE NODE TABLE TITLE_RATINGS(ratetconst STRING, averageRating DOUBLE, numVotes INT32, PRIMARY KEY (ratetconst));
