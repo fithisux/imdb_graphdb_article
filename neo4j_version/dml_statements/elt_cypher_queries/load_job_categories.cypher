@@ -1,1 +1,0 @@
-LOAD CSV WITH HEADERS FROM 'file:///seeds/job_categories.csv' AS line CREATE (n:JOB_CATEGORIES {job_category:line.job_category});

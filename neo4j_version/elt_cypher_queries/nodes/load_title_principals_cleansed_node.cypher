@@ -1,11 +1,8 @@
 LOAD CSV WITH HEADERS FROM 'file:///title_principals_cleansed_node.csv.gz' AS line  FIELDTERMINATOR ';'
 CALL {
     with line
-    CREATE (n:TITLE_PRINCIPALS {
-    tconst:line.tconst,
-    nconst:line.nconst,
-    job:line.job,
-    characters:line.characters,
+    CREATE (n:IMDB_TITLE_PRINCIPALS {
+    ID:line.ID,
     ordering:toInteger(line.ordering),
-    episodeNumber:toInteger(line.episodeNumber)})
+    job:line.job})
 } IN TRANSACTIONS OF 1000 ROWS;

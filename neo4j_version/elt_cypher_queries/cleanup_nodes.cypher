@@ -1,0 +1,16 @@
+DROP INDEX imdb_attribute_attribute IF EXISTS;
+DROP INDEX imdb_characters_somecharacter IF EXISTS;
+DROP INDEX imdb_distribution_type_distribution_type IF EXISTS;
+DROP INDEX imdb_genre_genre IF EXISTS;
+DROP INDEX imdb_job_category_category IF EXISTS;
+DROP INDEX imdb_language_code_alpha2 IF EXISTS;
+DROP INDEX imdb_name_basics_nconst IF EXISTS;
+DROP INDEX imdb_primaryprofession_profession IF EXISTS;
+DROP INDEX imdb_region_code_alpha2 IF EXISTS;
+DROP INDEX imdb_title_akas_id IF EXISTS;
+DROP INDEX imdb_title_basics_tconst IF EXISTS;
+DROP INDEX imdb_title_episode_epitconst IF EXISTS;
+DROP INDEX imdb_title_principals_id IF EXISTS;
+DROP INDEX imdb_title_ratings_tconst IF EXISTS;
+DROP INDEX imdb_title_type_title_type IF EXISTS;
+MATCH (n) CALL { WITH n DETACH DELETE n} IN TRANSACTIONS OF 10000 ROWS;

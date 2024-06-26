@@ -1,1 +1,0 @@
-LOAD CSV WITH HEADERS FROM 'file:///seeds/region_codes.csv' AS line CREATE (n:REGION_CODE {name:line.name, alpha2:line.alpha2});

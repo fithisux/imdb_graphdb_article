@@ -1,1 +1,0 @@
-LOAD CSV WITH HEADERS FROM 'file:///seeds/language_codes.csv' AS line CREATE (n:LANGUAGE_CODE {English:line.English, alpha2:line.alpha2});

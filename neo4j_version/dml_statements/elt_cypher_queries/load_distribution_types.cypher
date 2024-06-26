@@ -1,1 +1,0 @@
-LOAD CSV WITH HEADERS FROM 'file:///seeds/distribution_types.csv' AS line CREATE (n:DISTRIBUTION_TYPE {distribution_type:line.distribution_type});

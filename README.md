@@ -18,8 +18,8 @@ To view your graph and run interactive queries use next command (change accordin
 docker run -p 8000:8000  -v C:/work/imdb_graphdb_article/kuzudb_elt:/database --rm kuzudb/explorer:latest
 ```
 
-## Neo4j version (WIP)
-It generates a Neo4j DB graph database.
+## Neo4j version (WIP, only nodes and their indexes)
+It generates a Neo4j DB graph database (DOkcer will need 32GB) from the kuzdb graph model.
 
 Run first your neo4j
 
