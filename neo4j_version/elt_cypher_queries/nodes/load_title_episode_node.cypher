@@ -5,4 +5,4 @@ CALL {
     epitconst:line.epitconst,
     seasonNumber:toInteger(line.seasonNumber),
     episodeNumber:toInteger(line.episodeNumber)})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

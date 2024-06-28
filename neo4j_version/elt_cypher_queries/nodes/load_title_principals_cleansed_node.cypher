@@ -5,4 +5,4 @@ CALL {
     ID:line.ID,
     ordering:toInteger(line.ordering),
     job:line.job})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

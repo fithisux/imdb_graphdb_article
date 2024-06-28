@@ -6,4 +6,4 @@ CALL {
     primaryName:line.primaryName,
     birthYear:toInteger(line.birthYear),
     deathYear:toInteger(line.deathYear)})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

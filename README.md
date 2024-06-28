@@ -35,9 +35,8 @@ docker run \
     -e NEO4J_apoc_import_file_enabled=true \
     -e NEO4J_apoc_import_file_use__neo4j__config=true \
     -e NEO4J_PLUGINS=\[\"apoc\"\] \
-    --env NEO4J_server_memory_pagecache_size=10G \
-    --env NEO4J_server_memory_heap_initial__size=5G \
-    --env NEO4J_server_memory_heap_max__size=5G \
+    --env NEO4J_server_memory_heap_max__size=25G \
+    --env db.memory.transaction.total.max=10G \
     neo4j:latest
 ```
 

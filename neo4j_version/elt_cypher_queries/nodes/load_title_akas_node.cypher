@@ -6,4 +6,4 @@ CALL {
     title:line.title,
     ordering:toInteger(line.ordering),
     isOriginalTitle:toBoolean(line.isOriginalTitle)})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

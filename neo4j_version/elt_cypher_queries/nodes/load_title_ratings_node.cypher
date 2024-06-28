@@ -5,4 +5,4 @@ CALL {
     ratetconst:line.ratetconst,
     averageRating:toFloat(line.averageRating),
     numVotes:toInteger(line.numVotes)})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

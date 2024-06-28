@@ -3,4 +3,4 @@ CALL {
  WITH line
  MATCH (x:IMDB_TITLE_AKAS {ID: toInteger(line.ID)}), (y:IMDB_DISTRIBUTION_TYPE {distribution_type: toInteger(line.distribution_type)})
  CREATE (x)-[:HAS_DISTRIBUTION]->(y)
-} IN TRANSACTIONS OF 1000 ROWS
+} IN TRANSACTIONS OF 1000000 ROWS

@@ -9,4 +9,4 @@ CALL {
     startYear:toInteger(line.startYear),
     endYear:toInteger(line.endYear),
     runtimeMinutes:toInteger(line.runtimeMinutes)})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

@@ -3,4 +3,4 @@ CALL {
     with line
     CREATE (n:IMDB_PRIMARYPROFESSION {
     profession:line.profession})
-} IN TRANSACTIONS OF 1000 ROWS;
+} IN TRANSACTIONS OF 1000000 ROWS;

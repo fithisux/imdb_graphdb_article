@@ -3,4 +3,4 @@ CALL {
  WITH line
  MATCH (x:IMDB_TITLE_AKAS {ID: toInteger(line.ID)}), (y:IMDB_LANGUAGE_CODE {alpha2: toInteger(line.alpha2)})
  CREATE (x)-[:HAS_LANGUAGE]->(y)
-} IN TRANSACTIONS OF 1000 ROWS
+} IN TRANSACTIONS OF 1000000 ROWS
