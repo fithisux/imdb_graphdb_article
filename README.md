@@ -19,7 +19,7 @@ docker run -p 8000:8000  -v C:/work/imdb_graphdb_article/kuzudb_elt:/database --
 ```
 
 ## Neo4j version (WIP, only nodes and their indexes)
-It generates a Neo4j DB graph database (DOkcer will need 32GB) from the kuzdb graph model.
+It generates a Neo4j DB graph database (Dokcer will need 32GB) from the kuzdb graph model.
 
 Run first your neo4j
 
@@ -40,5 +40,24 @@ docker run \
     neo4j:latest
 ```
 
-Please run the [neo4j_export.ipynb](neo4j_version/neo4j_export.ipynb) notebook while having fixed if necessary the paths in order to export to parquet.
+Please run the [neo4j_export.ipynb](neo4j_version/neo4j_export.ipynb) notebook while having fixed if necessary the paths in order to export to csv.gz.
 Please run the [neo4j_load.ipynb](neo4j_version/neo4j_load.ipynb) to load graph to neo4j.
+
+## Apache Age version
+It generates an Apache AGE graph database from the apache_age data model.
+
+Run first your apache-age
+
+```
+docker run \
+    --name age  \
+    -p 5455:5432 \
+    -e POSTGRES_USER=postgresUser \
+    -e POSTGRES_PASSWORD=postgresPW \
+    -e POSTGRES_DB=postgresDB \
+    --volume="C:\work\imdb_graphdb_article\apache_age_version\export_elt":/usr/share/pgdata \
+    apache/age
+```
+
+Please run the [apache_age_export.ipynb](apache_age_version/apache_age_export.ipynb) notebook while having fixed if necessary the paths in order to export to csv.
+Please run the [apache_age_load.ipynb](apache_age_version/apache_age_load.ipynb) to load graph to Apache AGE.

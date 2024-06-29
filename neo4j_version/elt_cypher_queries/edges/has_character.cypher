@@ -1,6 +1,6 @@
-LOAD CSV WITH HEADERS FROM 'file:///characters_edge.csv.gz' AS line  FIELDTERMINATOR ';'
+LOAD CSV WITH HEADERS FROM 'file:///has_character_edge.csv.gz' AS line  FIELDTERMINATOR ';'
 CALL {
  WITH line
- MATCH (x:IMDB_TITLE_PRINCIPALS {ID: toInteger(line.ID)}), (y:IMDB_CHARACTERS {somecharacter: toInteger(line.somecharacter)})
+ MATCH (x:IMDB_TITLE_PRINCIPAL {principal_id: toInteger(line.principal_id)}), (y:IMDB_CHARACTER {somecharacter: toInteger(line.somecharacter)})
  CREATE (x)-[:HAS_CHARACTER]->(y)
 } IN TRANSACTIONS OF 1000000 ROWS

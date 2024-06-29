@@ -1,4 +1,4 @@
-LOAD CSV WITH HEADERS FROM 'file:///job_category_node.csv.gz' AS line  FIELDTERMINATOR ';'
+LOAD CSV WITH HEADERS FROM 'file:///imdb_job_category_node.csv.gz' AS line  FIELDTERMINATOR ';'
 CALL {
     with line
     CREATE (n:IMDB_JOB_CATEGORY {

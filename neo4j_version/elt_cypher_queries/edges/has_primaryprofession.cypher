@@ -1,4 +1,4 @@
-LOAD CSV WITH HEADERS FROM 'file:///primaryprofession_edge.csv.gz' AS line  FIELDTERMINATOR ';'
+LOAD CSV WITH HEADERS FROM 'file:///has_primaryprofession_edge.csv.gz' AS line  FIELDTERMINATOR ';'
 CALL {
  WITH line
  MATCH (x:IMDB_NAME_BASICS {nconst: toInteger(line.nconst)}), (y:IMDB_PRIMARYPROFESSION {profession: toInteger(line.profession)})

@@ -1,5 +1,6 @@
 **/.ipynb_checkpoints/**
 kuzudb_version/export_elt/**
+apache_age_version/export_elt/**
 neo4j_version/export_elt/**
 neo4j_version/data/**
 neo4j_version/logs/**
