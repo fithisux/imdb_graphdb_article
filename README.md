@@ -36,11 +36,11 @@ docker run \
     -e NEO4J_apoc_import_file_use__neo4j__config=true \
     -e NEO4J_PLUGINS=\[\"apoc\"\] \
     --env NEO4J_server_memory_heap_max__size=25G \
-    --env db.memory.transaction.total.max=10G \
+    --env NEO4J_db.memory.transaction.total.max=10G \
     neo4j:latest
 ```
 
-Please run the [neo4j_export.ipynb](neo4j_version/neo4j_export.ipynb) notebook while having fixed if necessary the paths in order to export to csv.gz.
+Please run the [neo4j_export.ipynb](neo4j_version/neo4j_export.ipynb) notebook while having fixed if necessary the paths in order to export to csv.
 Please run the [neo4j_load.ipynb](neo4j_version/neo4j_load.ipynb) to load graph to neo4j.
 
 ## Apache Age version
