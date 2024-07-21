@@ -9,8 +9,17 @@ Checkout this repo in the same folder with this one [IMDB DATASET ARTICLE CODE](
 ## Kuzudb version
 It generates a KuzuDB graph database in kuzudb_elt folder.
 
-Please run the [kuzudb_export.ipynb](kuzudb_version/kuzudb_export.ipynb) notebook while having fixed if necessary the paths in order to export to parquet.
-Please run the [kuzudb_load.ipynb](kuzudb_version/kuzudb_load.ipynb) to load graph to kuzudb.
+Install depenencies in a virtual environment from `requirments.txt`. In my case
+
+>  python.exe -m venv venv
+>
+>  venv\Scripts\activate.bat
+>
+>  pip3 install -r requirements.txt
+>
+
+Please run in virtual environemt the [kuzudb_export.ipynb](kuzudb_version/kuzudb_export.ipynb) notebook while having fixed if necessary the paths in order to export to parquet.
+Please run in virtual environemt the [kuzudb_load.ipynb](kuzudb_version/kuzudb_load.ipynb) to load graph to kuzudb.
 
 To view your graph and run interactive queries use next command (change accordingly)
 

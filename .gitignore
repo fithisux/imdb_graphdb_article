@@ -6,3 +6,4 @@ neo4j_version/data/**
 neo4j_version/logs/**
 kuzudb_version/kuzudb_elt/**
 export_elt/**
+venv/*
